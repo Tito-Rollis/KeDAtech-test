@@ -1,7 +1,7 @@
 import style from '../labelDisplay/index.module.css';
 import RadioBtn from '../../components/radioButtonComp/radioButtonComp';
 import { Link } from 'react-router-dom';
-export default function DataField() {
+export default function DateField() {
     return (
         <div className={style.container}>
             <Link to="/">
@@ -12,11 +12,20 @@ export default function DataField() {
                     className={style.arrow}
                 />
             </Link>
-            <h1 className={style.title}>Text Field Component</h1>
+            <h1 className={style.title}>Date-Field Component</h1>
             <div className={style.radio}>
-                <form>
+                <form
+                    style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: 10,
+                    }}
+                >
                     <RadioBtn name="radio">
-                        <input type="text" placeholder="You can input here!" />
+                        <input type="date" />
+                    </RadioBtn>
+                    <RadioBtn name="radio">
+                        <input type="month" />
                     </RadioBtn>
                 </form>
             </div>

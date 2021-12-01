@@ -14,6 +14,11 @@
     margin: 0;
     padding-top: 20px;
     font-size: 30px;
+    text-align: center;
+}
+
+.radio {
+    padding-left: 0;
 }
 
 .arrow {

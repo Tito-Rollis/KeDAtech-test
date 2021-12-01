@@ -7,8 +7,8 @@ export default function Home() {
             <h1 className={style.title}>Pick The UI Below!</h1>
             <ul className={style.nav}>
                 <li className={style.list}>
-                    <Link className={style.link} to="/data">
-                        Data Field
+                    <Link className={style.link} to="/date">
+                        Date-Field
                     </Link>
                 </li>
                 <li className={style.list}>
@@ -19,6 +19,11 @@ export default function Home() {
                 <li className={style.list}>
                     <Link className={style.link} to="/text">
                         Text Field
+                    </Link>
+                </li>
+                <li className={style.list}>
+                    <Link className={style.link} to="/range">
+                        Range
                     </Link>
                 </li>
             </ul>

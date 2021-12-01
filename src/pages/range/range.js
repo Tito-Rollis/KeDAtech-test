@@ -1,7 +1,7 @@
-import style from './index.module.css';
+import style from '../labelDisplay/index.module.css';
 import RadioBtn from '../../components/radioButtonComp/radioButtonComp';
 import { Link } from 'react-router-dom';
-export default function Home() {
+export default function Range() {
     return (
         <div className={style.container}>
             <Link to="/">
@@ -12,12 +12,18 @@ export default function Home() {
                     className={style.arrow}
                 />
             </Link>
-            <h1 className={style.title}>Label Display Component</h1>
+            <h1 className={style.title}>Range Component</h1>
             <div className={style.radio}>
-                <form action="">
-                    <RadioBtn name="radio" display="none" label="Radio A" />
-                    <RadioBtn name="radio" display="none" label="Radio B" />
-                    <RadioBtn name="radio" display="none" label="Radio C" />
+                <form
+                    style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: 10,
+                    }}
+                >
+                    <RadioBtn name="radio">
+                        <input type="range" />
+                    </RadioBtn>
                 </form>
             </div>
         </div>
