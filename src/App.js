@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import DataField from './pages/dataField/dataField';
+import LabelDisplay from './pages/labelDisplay/labelDisplay';
+import TextField from './pages/textField/textField';
+import Home from './pages/home/home';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route path="/label" element={<LabelDisplay />} />
+                <Route path="/data" element={<DataField />} />
+                <Route path="/text" element={<TextField />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
