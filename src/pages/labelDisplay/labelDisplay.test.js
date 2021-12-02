@@ -4,6 +4,6 @@ import LabelDisplay from './labelDisplay';
 
 test('Text Field page rendered', () => {
     render(<LabelDisplay />, { wrapper: MemoryRouter });
-    const linkElement = screen.getByText(/Label Display Component/i);
+    const linkElement = screen.getByText('Label Display Component');
     expect(linkElement).toBeInTheDocument();
 });

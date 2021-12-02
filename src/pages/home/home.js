@@ -11,7 +11,7 @@ export default function Home() {
                         Date-Field
                     </Link>
                 </li>
-                <li className={style.list}>
+                <li data-testid="label-display" className={style.list}>
                     <Link className={style.link} to="/label">
                         Label Display
                     </Link>

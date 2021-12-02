@@ -3,7 +3,7 @@ import RadioBtn from '../../components/radioButtonComp/radioButtonComp';
 import { Link } from 'react-router-dom';
 export default function Home() {
     return (
-        <div className={style.container}>
+        <div data-testid="label-page" className={style.container}>
             <Link to="/">
                 <img
                     alt="left-arrow"

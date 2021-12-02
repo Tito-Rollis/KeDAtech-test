@@ -4,6 +4,6 @@ import DateField from './dateField';
 
 test('Text Field page rendered', () => {
     render(<DateField />, { wrapper: MemoryRouter });
-    const linkElement = screen.getByText(/Date-Field Component/i);
+    const linkElement = screen.getByText('Date-Field Component');
     expect(linkElement).toBeInTheDocument();
 });
