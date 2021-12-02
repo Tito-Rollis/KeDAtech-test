@@ -1,6 +1,6 @@
 import style from './index.module.css';
 
-export default function Home({ label, name, children }) {
+export default function RadioButtonComp({ label, name, children }) {
     return (
         <div className={style.container}>
             <input aria-label="radio-btn" name={name} type="radio" />
