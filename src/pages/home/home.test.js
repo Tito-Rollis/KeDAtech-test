@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import { MemoryRouter } from 'react-router-dom';
+import Home from './home';
 
-test('renders learn react link', () => {
-    render(<App />);
+test('Text Field page rendered', () => {
+    render(<Home />, { wrapper: MemoryRouter });
     const linkElement = screen.getByText(/Pick The UI Below!/i);
     expect(linkElement).toBeInTheDocument();
 });

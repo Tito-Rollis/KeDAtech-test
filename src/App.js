@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import DateField from './pages/dateField/dateField';
 import LabelDisplay from './pages/labelDisplay/labelDisplay';
 import TextField from './pages/textField/textField';
@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
     return (
-        <BrowserRouter>
+        <Router>
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route path="/label" element={<LabelDisplay />} />
@@ -16,7 +16,7 @@ function App() {
                 <Route path="/text" element={<TextField />} />
                 <Route path="/range" element={<Range />} />
             </Routes>
-        </BrowserRouter>
+        </Router>
     );
 }
 

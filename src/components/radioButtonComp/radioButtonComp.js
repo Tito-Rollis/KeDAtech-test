@@ -3,8 +3,8 @@ import style from './index.module.css';
 export default function Home({ label, name, children }) {
     return (
         <div className={style.container}>
-            <input name={name} type="radio" />
-            <label>{label}</label>
+            <input aria-label="radio-btn" name={name} type="radio" />
+            <label aria-label="label">{label}</label>
             {children}
         </div>
     );
